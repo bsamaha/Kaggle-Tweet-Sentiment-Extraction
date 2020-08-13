@@ -12,7 +12,7 @@ Extracting sentiment can be a very useful tool for people who have to sift throu
 ## Summary:
 We used the Fastai software and the ULMFiT method popularized by Jeremy Howard, et al. We used the [AWD_LSTM model](https://arxiv.org/abs/1708.02182) as a starting point and then trained our language model on our tweet text data. From there we built out a sentiment classifier to predict the sentiment of the text. We used intrinsic attention to find the weights of each word produced by the output tensor of the classifier and then established a minimum threshold of weights. Whatever consecutive string of words that were above that threshold were then deemed our extracted text.
 
-[Please check out a brief non-technical presentation on this project.]()
+[Please check out a brief non-technical presentation on this project.](https://github.com/bsamaha/Kaggle-Tweet-Sentiment-Extraction/blob/master/Non_technical_pres.pptx)
 
 ## Google Colab
 Since my local machine's GPU does not have CUDA capability I completed this project in Google Colab. Due to all of the model's being quite large (100 MB+) I was unable to upload them to GitHub. The models (language model, language encoder, and classification model) can easily be reproduced by opening the notebook in Colab, uploading both CSVs located in the data folder of this GitHub repository, and then run the notebook in full.
